@@ -9,12 +9,46 @@ body {
     align-items: center;
     justify-content: center;
     perspective: 1000px;
+    overflow-x: hidden;
 }
 #container {
-    width: 50%;
+    width: 90%;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    #card {
+        width: 80%;
+        padding: 0rem 2rem;
+    }
+    .info h1 {
+        font-size: 2rem;
+    }
+    .info h3 {
+        font-size: 0.9rem;
+    }
+    .sneaker img {
+        width: 8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #card {
+        width: 95%;
+        padding: 0rem 1rem;
+    }
+    .info h1 {
+        font-size: 1.5rem;
+    }
+    .info h3 {
+        font-size: 0.8rem;
+    }
+    .sneaker img {
+        width: 6rem;
+    }
 }
 #card {
     transform-style: preserve-3d;
